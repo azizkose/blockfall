@@ -5,3 +5,6 @@ coverage
 .DS_Store
 .vite
 .claude/settings.local.json
+
+# Private planning and review notes (keep out of the public repo)
+docs/reviews/

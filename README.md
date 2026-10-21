@@ -4,7 +4,33 @@ A modern falling-block puzzle game for the browser, with a neon look, smooth eff
 
 **Play it:** https://azizkose.github.io/blockfall/
 
-> Status: early development. The live page is a placeholder until gameplay lands.
+> Status: early development. The core game is playable with plain graphics. Effects, sound,
+> settings and mobile controls are on the way.
+
+## How to play
+
+Pieces fall into a 10-wide well. Fill a whole row to clear it. Clear several rows at once, or
+spin a T piece into a tight slot (a "T-spin"), for bigger scores. The game ends when the stack
+reaches the top.
+
+**Modes**
+
+- **Marathon**: endless. The game speeds up every 10 lines.
+- **Sprint**: clear 40 lines as fast as you can.
+- **Ultra**: score as much as you can in 2 minutes.
+
+**Keyboard**
+
+| Action       | Keys       |
+| ------------ | ---------- |
+| Move         | Left/Right |
+| Soft drop    | Down       |
+| Hard drop    | Space      |
+| Rotate right | Up or X    |
+| Rotate left  | Z          |
+| Rotate 180   | A          |
+| Hold         | C or Shift |
+| Pause        | Esc or P   |
 
 ## Run locally
 

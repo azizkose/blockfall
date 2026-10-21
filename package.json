@@ -1,7 +1,7 @@
 {
   "name": "blockfall",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A modern falling-block puzzle game for the browser.",
   "license": "MIT",
   "type": "module",

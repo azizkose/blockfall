@@ -12,7 +12,55 @@
     <title>Blockfall</title>
   </head>
   <body>
-    <main id="app"></main>
+    <main id="app">
+      <section id="menu" class="screen" aria-labelledby="menu-title">
+        <div class="panel menu-panel">
+          <h1 id="menu-title" class="logo">Blockfall</h1>
+          <p class="tagline">Choose a mode</p>
+          <div id="mode-list" class="mode-list"></div>
+          <details class="controls">
+            <summary>Controls</summary>
+            <dl>
+              <dt>Move</dt>
+              <dd>← →</dd>
+              <dt>Soft drop</dt>
+              <dd>↓</dd>
+              <dt>Hard drop</dt>
+              <dd>Space</dd>
+              <dt>Rotate right</dt>
+              <dd>↑ or X</dd>
+              <dt>Rotate left</dt>
+              <dd>Z</dd>
+              <dt>Rotate 180°</dt>
+              <dd>A</dd>
+              <dt>Hold</dt>
+              <dd>C or Shift</dd>
+              <dt>Pause</dt>
+              <dd>Esc or P</dd>
+            </dl>
+          </details>
+          <p id="version" class="version"></p>
+        </div>
+      </section>
+
+      <section id="game" class="screen game-screen" hidden>
+        <canvas id="board" role="img" aria-label="Game board"></canvas>
+        <div
+          id="overlay"
+          class="overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="overlay-title"
+          hidden
+        >
+          <div class="panel overlay-panel">
+            <h2 id="overlay-title"></h2>
+            <div id="overlay-body"></div>
+            <div id="overlay-actions" class="actions"></div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
