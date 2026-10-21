@@ -1,0 +1,79 @@
+:root {
+  --bg: #0b0d1a;
+  --bg-2: #151a33;
+  --text: #e8ecff;
+  --muted: #9aa3c7;
+  --cyan: #4cf2ff;
+  --violet: #b26bff;
+  --pink: #ff5fa2;
+  color-scheme: dark;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 15%, rgb(178 107 255 / 0.25), transparent 45%),
+    radial-gradient(circle at 80% 85%, rgb(76 242 255 / 0.18), transparent 45%), var(--bg);
+}
+
+.placeholder {
+  max-width: 480px;
+  width: 100%;
+  padding: 40px 28px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  background: rgb(21 26 51 / 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 20px 60px rgb(0 0 0 / 0.45);
+}
+
+.logo {
+  margin: 0 0 8px;
+  font-size: clamp(2.4rem, 9vw, 3.6rem);
+  letter-spacing: 0.04em;
+  background: linear-gradient(90deg, var(--cyan), var(--violet), var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 18px rgb(76 242 255 / 0.35));
+}
+
+.tagline {
+  margin: 0 0 20px;
+  font-size: 1.1rem;
+}
+
+.status {
+  margin: 0 0 24px;
+  color: var(--muted);
+}
+
+.version {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
